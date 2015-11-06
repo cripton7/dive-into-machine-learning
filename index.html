@@ -2,7 +2,7 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>Dive-into-machine-learning by hangtwenty</title>
+    <title>Dive into Machine Learning by hangtwenty</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -11,19 +11,20 @@
   </head>
   <body>
     <section class="page-header">
-      <h1 class="project-name">Dive-into-machine-learning</h1>
-      <h2 class="project-tagline">Dive into Machine Learning with ipython and scikit-learn. This is a by-beginner, for-beginner&#39;s guide. Please contribute, open issues, and submit pull requests. Thanks!</h2>
+      <h1 class="project-name">Dive into Machine Learning</h1>
+      <h2 class="project-tagline">Dive into Machine Learning with Jupyter notebook, Python, and scikit-learn. This is a by-beginner, for-beginner&#39;s guide. Please contribute, open issues, and submit pull requests. Thanks!</h2>
       <a href="https://github.com/hangtwenty/dive-into-machine-learning" class="btn">View on GitHub</a>
       <a href="https://github.com/hangtwenty/dive-into-machine-learning/zipball/master" class="btn">Download .zip</a>
       <a href="https://github.com/hangtwenty/dive-into-machine-learning/tarball/master" class="btn">Download .tar.gz</a>
     </section>
 
     <section class="main-content">
-      <p>Hi there! This guide is for you:</p>
+      <p><strong>Hi there! This guide is for you:</strong></p>
 
 <ul>
-<li>You're new to Machine Learning</li>
-<li>You can understand and write Python code. (If you want to learn Python, try <a href="http://www.diveintopython.net/">Dive Into Python.</a>)</li>
+<li><strong>You're new to Machine Learning.</strong></li>
+<li>
+<strong>You know Python.</strong> (At least the basics! If you want to learn Python, try <a href="http://www.diveintopython.net/">Dive Into Python.</a>)</li>
 </ul>
 
 <p>I learned Python by hacking first, and getting serious <em>later.</em> I wanted to do this with Machine Learning. If this is your style, join me in getting a bit ahead of yourself.</p>
@@ -40,15 +41,23 @@
 
 <ul>
 <li>
-<a href="https://www.python.org/downloads/">Python</a>. (I'm using 2.7.5) and <a href="https://pip.pypa.io/en/latest/installing.html">pip</a>, the Python package manager</li>
+<a href="https://www.python.org/">Python</a>. Python 3 is the best option.</li>
 <li>
-<a href="http://ipython.org/install.html">ipython</a> and IPython Notebook. <code>pip install "ipython[notebook]"</code>
-</li>
-<li>Some scientific computing packages: <code>pip install scikit-learn pandas matplotlib numpy</code>
+<a href="http://ipython.org/">IPython and the Jupyter Notebook</a>. (FKA IPython and IPython Notebook.)</li>
+<li>Some scientific computing packages:
+
+<ul>
+<li>numpy</li>
+<li>pandas</li>
+<li>scikit-learn</li>
+<li>matplotlib</li>
+</ul>
 </li>
 </ul>
 
-<p>If you're only using Python for scientific computing, you can grab these tools in one convenient package: <a href="https://store.continuum.io/cshop/anaconda/">Anaconda</a>.</p>
+<p>You can install Python 3 and all of these packages in a few clicks with the <a href="https://www.continuum.io/downloads">Anaconda Python distribution</a>. Anaconda is popular in Data Science and Machine Learning communities.</p>
+
+<p>If you're using Python 2.7, don't worry. You don't have to migrate to Python 3 just for this guide. Also, if you're using pip/virtualenv instead of Anaconda, that's alright too! Confer <a href="http://conda.pydata.org/docs/_downloads/conda-pip-virtualenv-translator.html">conda vs. pip vs. virtualenv</a> if you're curious.</p>
 
 <h2>
 <a id="lets-go" class="anchor" href="#lets-go" aria-hidden="true"><span class="octicon octicon-link"></span></a>Let's go!</h2>
@@ -57,22 +66,33 @@
 
 <p>Now, follow along with this brief exercise (10 minutes): <strong><a href="http://scikit-learn.org/stable/tutorial/basic/tutorial.html">An introduction to machine learning with scikit-learn</a></strong>. Do it in <code>ipython</code> or IPython Notebook. It'll really boost your confidence.</p>
 
-<p>I'll wait...</p>
+<p><a href="http://scikit-learn.org/stable/tutorial/basic/tutorial.html"><img src="http://i.imgur.com/nqn3pVV.jpg" alt="I'll wait."></a></p>
 
 <h2>
 <a id="what-just-happened" class="anchor" href="#what-just-happened" aria-hidden="true"><span class="octicon octicon-link"></span></a>What just happened?</h2>
 
 <p>You just classified some hand-written digits using <a href="">scikit-learn</a>. Neat huh?</p>
 
-<p><a href="http://scikit-learn.org/stable/index.html">scikit-learn</a> is the go-to library for machine learning in Python. <a href="http://scikit-learn.org/stable/testimonials/testimonials.html">Some recognizable logos use it, including Spotify and Evernote.</a> Machine learning is complex. You'll be glad your tools are simple.</p>
+<p><a href="http://scikit-learn.org/stable/index.html">scikit-learn</a> is the go-to library for machine learning in Python. <a href="http://scikit-learn.org/stable/testimonials/testimonials.html">Some recognizable logos use it, including Spotify and Evernote.</a> Machine learning is hard. You'll be glad your tools are easy to work with.</p>
 
 <p>I encourage you to look at the <a href="http://scikit-learn.org/stable/index.html">scikit-learn</a> homepage  and spend about 5 minutes looking over the names of the strategies (Classification, Regression, etc.), and their applications. Don't click through yet! Just get a glimpse of the vocabulary.</p>
 
 <h1>
-<a id="immerse-yourself" class="anchor" href="#immerse-yourself" aria-hidden="true"><span class="octicon octicon-link"></span></a>Immerse yourself</h1>
+<a id="dive-in" class="anchor" href="#dive-in" aria-hidden="true"><span class="octicon octicon-link"></span></a>Dive in</h1>
+
+<h2>
+<a id="a-visual-introduction-to-machine-learning" class="anchor" href="#a-visual-introduction-to-machine-learning" aria-hidden="true"><span class="octicon octicon-link"></span></a>A Visual Introduction to Machine Learning</h2>
+
+<p>Let's learn a bit more about Machine Learning, and a couple of common ideas and concerns. Read <a href="http://www.r2d3.us/visual-intro-to-machine-learning-part-1/">"A Visual Introduction to Machine Learning, Part 1"</a> by <a href="https://twitter.com/stephaniejyee">Stephanie Yee</a> and <a href="https://twitter.com/tonyhschu/">Tony Chu</a>.</p>
+
+<p><a href="http://www.r2d3.us/visual-intro-to-machine-learning-part-1/"><img src="http://i.imgur.com/j5fiTBv.gif" alt="A Visual Introduction to Machine Learning, Part 1"></a></p>
+
+<p>It won't take long. It's a beautiful introduction ... Try not to drool too much!</p>
 
 <h2>
 <a id="a-few-useful-things-to-know-about-machine-learning" class="anchor" href="#a-few-useful-things-to-know-about-machine-learning" aria-hidden="true"><span class="octicon octicon-link"></span></a>A Few Useful Things to Know about Machine Learning</h2>
+
+<p>OK. Let's dive deeper.</p>
 
 <p>Read <strong><a href="http://homes.cs.washington.edu/%7Epedrod/papers/cacm12.pdf">A Few Useful Things to Know about Machine Learning</a></strong> by Pedro Domingos. It's densely packed with valuable information, but not opaque. The author understands that there's a lot of "black art" and folk wisdom, and they invite you in.</p>
 
@@ -91,7 +111,7 @@
 
 <p><img src="http://i1381.photobucket.com/albums/ah240/hangtwenty/Screen%20Shot%202015-03-05%20at%2010.08.10%20PM_zpsqnljkqt5.png" alt="What has the most impact in Machine Learning"></p>
 
-<p>(The image above was inspired by a slide from <a href="https://www.youtube.com/watch?v=TYVCVzEJhhQ">Alex Pinto's talk, "Secure Because Math: A Deep-Dive on ML-Based Monitoring</a>.)</p>
+<p>(Chart inspired by a slide from <a href="https://www.youtube.com/watch?v=TYVCVzEJhhQ">Alex Pinto's talk, "Secure Because Math: A Deep-Dive on ML-Based Monitoring"</a>.)</p>
 
 <h2>
 <a id="talking-machines" class="anchor" href="#talking-machines" aria-hidden="true"><span class="octicon octicon-link"></span></a>Talking Machines</h2>
@@ -116,7 +136,9 @@
 <a href="http://agconti.github.io/kaggle-titanic/">Machine Learning from Disaster</a>: Using Titanic data, "Demonstrates basic data munging, analysis, and visualization techniques. Shows examples of supervised machine learning techniques."</li>
 <li>
 <a href="https://github.com/jseabold/538model">Election Forecasting</a>: A replication of the model Nate Silver used to make <a href="http://fivethirtyeight.blogs.nytimes.com/fivethirtyeights-2012-forecast/">predictions about the 2012 US Presidential Election for the New York Times</a>)</li>
-<li>ClickSecurity's "data hacking" series (thanks <a href="http://github.com/hummus">Aaron</a>)
+<li>
+<a href="https://github.com/rhiever/Data-Analysis-and-Machine-Learning-Projects/blob/master/example-data-science-notebook/Example%20Machine%20Learning%20Notebook.ipynb">An example Machine Learning notebook</a>: "let's pretend we're working for a startup that just got funded to create a smartphone app that automatically identifies species of flowers from pictures taken on the smartphone.  We've been tasked by our head of data science to create a demo machine learning model that takes four measurements from the flowers (sepal length, sepal width, petal length, and petal width) and identifies the species based on those measurements alone."</li>
+<li>ClickSecurity's "data hacking" series (thanks <a href="https://github.com/hummus">hummus</a>!)
 
 <ul>
 <li>
@@ -130,7 +152,7 @@
 <li>Or more generic tutorials/overviews ...
 
 <ul>
-<li><a href="http://amueller.github.com/sklearn_tutorial">Tutorial introduction to machine learning with sklearn</a></li>
+<li><a href="http://amueller.github.io/sklearn_tutorial/">Tutorial introduction to machine learning with sklearn</a></li>
 <li><a href="http://bugra.github.io/work/notes/2014-11-22/an-introduction-to-supervised-learning-scikit-learn/">An Introduction to Supervised Learning via Scikit Learn</a></li>
 <li><a href="http://bugra.github.io/work/notes/2014-11-16/an-introduction-to-unsupervised-learning-scikit-learn/">An Introduction to Unsupervised Learning via Scikit Learn</a></li>
 </ul>
@@ -145,29 +167,27 @@
 </ul>
 
 <h1>
-<a id="dive-deeper-coursework" class="anchor" href="#dive-deeper-coursework" aria-hidden="true"><span class="octicon octicon-link"></span></a>Dive Deeper: Coursework</h1>
+<a id="immerse-yourself" class="anchor" href="#immerse-yourself" aria-hidden="true"><span class="octicon octicon-link"></span></a>Immerse yourself</h1>
+
+<p>Pick one of the courses below and do the whole thing.</p>
 
 <h2>
-<a id="your-main-course" class="anchor" href="#your-main-course" aria-hidden="true"><span class="octicon octicon-link"></span></a>Your main course</h2>
+<a id="recommended-course" class="anchor" href="#recommended-course" aria-hidden="true"><span class="octicon octicon-link"></span></a>Recommended course</h2>
 
-<p><strong><a href="https://www.coursera.org/course/ml">Prof. Andrew Ng (Stanford)'s online course <em>Machine Learning</em></a> is the free online course I see recommended the most.</strong></p>
+<p><strong><a href="https://www.coursera.org/learn/machine-learning">Prof. Andrew Ng (Stanford)'s online course <em>Machine Learning</em></a> is a free online course I saw recommended often.</strong> I saw many people recommend this course emphatically.</p>
 
 <p>It's helpful if you decide on a pet project to play around with, as you go, so you have a way to apply your knowledge. You could use one of these <a href="https://github.com/caesar0301/awesome-public-datasets">Awesome Public Datasets</a>. And remember, IPython Notebook is your friend.</p>
 
 <p>Also, the book <em><a href="http://statweb.stanford.edu/%7Etibs/ElemStatLearn/">Elements of Statistical Learning</a></em> comes up frequently, but is usually referred to as a "reference" not an introduction. It's free, so download or bookmark it!</p>
 
-<h3>
-<a id="alternative-main-courses" class="anchor" href="#alternative-main-courses" aria-hidden="true"><span class="octicon octicon-link"></span></a>Alternative main courses</h3>
+<h2>
+<a id="other-courses" class="anchor" href="#other-courses" aria-hidden="true"><span class="octicon octicon-link"></span></a>Other courses</h2>
 
 <p>Here are some other free online courses I've <a href="https://docs.google.com/document/d/1YN6BVdReNAYc8B0fjQ84yzDflqmeEPj7S0Xc-9_26R0/">seen recommended</a>. (Machine Learning, Data Science, and related topics.)</p>
 
 <ul>
 <li>
-<a href="https://www.coursera.org/course/machlearning">Machine Learning</a> by Prof. Pedro Domingos of the University of Washington. Domingos wrote the paper <a href="https://homes.cs.washington.edu/%7Epedrod/papers/cacm12.pdf">"A Few Useful Things to Know About Machine Learning"</a> quoted earlier in this guide. (Thanks to <a href="https://news.ycombinator.com/item?id=9563501">paperwork on HN.</a>)</li>
-<li>
-<a href="http://stronginference.com/Bios8366/lectures.html">Advanced Statistical Computing (Vanderbilt, BIOS8366)</a> -- great option, highly interactive (lots of IPython Notebook material)</li>
-<li><a href="http://cs109.github.io/2014/">Data Science (Harvard, CS109)</a></li>
-<li><a href="https://github.com/justmarkham/DAT3">Data Science (General Assembly)</a></li>
+<a href="https://www.coursera.org/course/machlearning">Machine Learning</a> by Prof. Pedro Domingos of the University of Washington. Domingos wrote the paper <a href="https://homes.cs.washington.edu/%7Epedrod/papers/cacm12.pdf">"A Few Useful Things to Know About Machine Learning"</a> quoted earlier in this guide. (Thanks to <a href="https://news.ycombinator.com/item?id=9563501"><em>paperwork</em> on HN.</a>)</li>
 <li>Data science courses as IPython Notebooks:
 
 <ul>
@@ -176,6 +196,19 @@
 <li>Supplementary material: <a href="https://github.com/donnemartin/data-science-ipython-notebooks">donnemartin/data-science-ipython-notebooks</a>. "Continually updated Data Science Python Notebooks: Spark, Hadoop MapReduce, HDFS, AWS, Kaggle, scikit-learn, matplotlib, pandas, NumPy, SciPy, and various command lines."</li>
 </ul>
 </li>
+<li>General Assembly's <a href="https://github.com/justmarkham/DAT5">DAT5</a> (revision of <a href="https://github.com/justmarkham/DAT4">DAT4</a> and  <a href="https://github.com/justmarkham/DAT3">DAT3</a>). Interactive.</li>
+<li>Surveys of Data Science courseware (a bit more Choose Your Own Adventure)
+
+<ul>
+<li>Check out <a href="https://www.quora.com/Is-it-worth-it-to-pay-9-*-49-for-a-data-science-specialization-on-Coursera/answer/Jack-Golding">Jack Golding's survey of Data Science courseware</a>. Includes Coursera's <a href="https://www.coursera.org/specializations/jhudatascience">Data Science Specialization</a> with 9 courses in it. The Specialization certificate isn't free, but you can take the courses 1-by-1 for free if you don't care about the certificate. The survey also covers <a href="http://cs109.github.io/2014/">Harvard CS109</a> which I've seen recommended elsewhere.</li>
+<li><a href="https://www.quora.com/How-can-I-become-a-data-scientist?redirected_qid=59455">Another epic Quora thread: How can I become a data scientist?</a></li>
+<li>Data Science Weekly's <a href="http://www.datascienceweekly.org/data-science-resources/the-big-list-of-data-science-resources">Big List of Data Science Resources</a> has a <a href="http://www.datascienceweekly.org/data-science-resources/data-science-moocs">List of Data Science MOOCs</a>
+</li>
+</ul>
+</li>
+<li><a href="http://cs109.github.io/2014/">Data Science (Harvard CS109)</a></li>
+<li>
+<a href="http://stronginference.com/Bios8366/lectures.html">Advanced Statistical Computing (Vanderbilt BIOS8366)</a> -- great option, interactive (lots of IPython Notebook material)</li>
 </ul>
 
 <h2>
@@ -215,27 +248,32 @@
 <li><a href="http://scikit-learn.org/stable/tutorial/machine_learning_map/">scikit-learn algorithm cheat sheet</a></li>
 <li>
 <a href="http://hunch.net/?p=2714">Metacademy: a package manager for [machine learning] knowledge</a>. A mind map of machine learning concepts, with great detail on each.</li>
+<li>
+<a href="https://drive.google.com/folderview?id=0ByIrJAE4KMTtaGhRcXkxNHhmY2M">Matplotlib / Pandas / Python cheat sheets</a>. By <a href="https://twitter.com/Mark_Graph">@Mark_Graph</a>
+</li>
 </ul>
 
 <h2>
 <a id="more-topics" class="anchor" href="#more-topics" aria-hidden="true"><span class="octicon octicon-link"></span></a>More topics</h2>
 
 <h3>
-<a id="data-science" class="anchor" href="#data-science" aria-hidden="true"><span class="octicon octicon-link"></span></a>Data Science</h3>
+<a id="more-data-science-materials" class="anchor" href="#more-data-science-materials" aria-hidden="true"><span class="octicon octicon-link"></span></a>More Data Science materials</h3>
+
+<p>Not repeating the materials mentioned above, here are some more Data Science resources:</p>
 
 <ul>
+<li><strong>Extremely accessible data science book: <a href="http://www.john-foreman.com/data-smart-book.html"><em>Data Smart</em> by John Foreman</a></strong></li>
 <li><strong><a href="http://learnds.com/">An entire self-directed course in Data Science, as a IPython Notebook</a></strong></li>
-<li>Extremely accessible data science book: <a href="http://www.john-foreman.com/data-smart-book.html"><em>Data Smart</em> by John Foreman</a> </li>
 <li>
 <a href="http://cacm.acm.org/blogs/blog-cacm/169199-data-science-workflow-overview-and-challenges/fulltext">Data Science Workflow: Overview and Challenges</a> (read the article &amp; the comment by Joseph McCarthy)</li>
-<li> Fun little IPython Notebook: <a href="http://nbviewer.ipython.org/github/jmsteinw/Notebooks/blob/master/IndeedJobs.ipynb">Web Scraping Indeed.com for Key Data Science Job Skills</a>
+<li>Fun little IPython Notebook: <a href="http://nbviewer.ipython.org/github/jmsteinw/Notebooks/blob/master/IndeedJobs.ipynb">Web Scraping Indeed.com for Key Data Science Job Skills</a>
 </li>
 </ul>
 
 <h3>
 <a id="many-more-specialized-topics" class="anchor" href="#many-more-specialized-topics" aria-hidden="true"><span class="octicon octicon-link"></span></a>Many more specialized topics</h3>
 
-<p>Check out <a href="http://gwulfs.github.io/">Gideon Wulfsohn</a>'s <a href="https://docs.google.com/document/d/1YN6BVdReNAYc8B0fjQ84yzDflqmeEPj7S0Xc-9_26R0"><strong>excellent</strong> introduction to Machine Learning</a> for specialized knowledge on many topics... including <a href="http://www.quora.com/How-do-random-forests-work-in-laymans-terms">Ensemble Methods</a>, <a href="https://spark.apache.org/examples.html">Apache Spark</a>, <a href="https://www.coursera.org/course/neuralnets">Neural Networks</a>, <a href="http://pybrain.org/">Reinforcement Learning</a>, <a href="https://nltk.org">Natural Language Processing</a> (<a href="https://github.com/IndicoDataSolutions/Passage">RNN</a>, <a href="http://bugra.github.io/work/notes/2015-02-21/topic-modeling-for-the-uninitiated/">LDA</a>, <a href="http://radimrehurek.com/2014/02/word2vec-tutorial/">Word2Vec</a>), <a href="https://pystruct.github.io/">Structured Prediction</a>, <a href="https://www.youtube.com/watch?v=S75EdAcXHKk">Deep Learning</a>, <a href="http://web.stanford.edu/class/cs246/">Distributed Systems (Hadoop Ecosystem)</a>, Graphical Models (<a href="http://www.autonlab.org/tutorials/hmm.html">Hidden Markov Models</a>), <a href="https://github.com/hyperopt/hyperopt">Hyper Parameter Optimization</a>, <a href="http://deeplearning.net/software/theano/tutorial/using_gpu.html">GPU Acceleration (Theano)</a>, <a href="http://deeplearning.net/tutorial/lenet.html">Computer Vision</a>, Internet of Things, and Visualization.</p>
+<p>Check out <a href="http://gwulfs.github.io/">Gideon Wulfsohn</a>'s <a href="https://docs.google.com/document/d/1YN6BVdReNAYc8B0fjQ84yzDflqmeEPj7S0Xc-9_26R0"><strong>excellent</strong> introduction to Machine Learning</a> for specialized knowledge on many topics... including <a href="http://www.quora.com/How-do-random-forests-work-in-laymans-terms">Ensemble Methods</a>, <a href="https://spark.apache.org/examples.html">Apache Spark</a>, <a href="https://www.coursera.org/course/neuralnets">Neural Networks</a>, <a href="http://pybrain.org/">Reinforcement Learning</a>, <a href="https://nltk.org">Natural Language Processing</a> (<a href="https://github.com/IndicoDataSolutions/Passage">RNN</a>, <a href="http://bugra.github.io/work/notes/2015-02-21/topic-modeling-for-the-uninitiated/">LDA</a>, <a href="http://rare-technologies.com/word2vec-tutorial/">Word2Vec</a>), <a href="https://pystruct.github.io/">Structured Prediction</a>, <a href="https://www.youtube.com/watch?v=S75EdAcXHKk">Deep Learning</a>, <a href="http://web.stanford.edu/class/cs246/">Distributed Systems (Hadoop Ecosystem)</a>, Graphical Models (<a href="http://www.autonlab.org/tutorials/hmm.html">Hidden Markov Models</a>), <a href="https://github.com/hyperopt/hyperopt">Hyper Parameter Optimization</a>, <a href="http://deeplearning.net/software/theano/tutorial/using_gpu.html">GPU Acceleration (Theano)</a>, <a href="http://deeplearning.net/tutorial/lenet.html">Computer Vision</a>, Internet of Things, and Visualization.</p>
 
 <p>Here's an IPython Notebook book about <a href="http://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/">Probabilistic Programming
 and Bayesian Methods for Hackers</a>: "An intro to Bayesian methods and probabilistic programming from a computation/understanding-first, mathematics-second point of view."</p>
@@ -243,9 +281,11 @@ and Bayesian Methods for Hackers</a>: "An intro to Bayesian methods and probabil
 <h2>
 <a id="questions-answers-chats" class="anchor" href="#questions-answers-chats" aria-hidden="true"><span class="octicon octicon-link"></span></a>Questions, answers, chats</h2>
 
-<p>For now, the best StackExchange site is  <a href="http://stats.stackexchange.com/questions/tagged/machine-learning?sort=frequent&amp;pageSize=15">stats.stackexchange.com – <em>machine-learning</em>.</a> (There's also <a href="http://datascience.stackexchange.com/">datascience.stackexchange.com</a>, but it's still in Beta.) And there's <a href="http://www.reddit.com/r/machinelearning">/r/machinelearning</a>. There are also many relevant discussions on Quora, for example: <a href="http://www.quora.com/What-is-the-difference-between-Data-Analytics-Data-Analysis-Data-Mining-Data-Science-Machine-Learning-and-Big-Data-1">What is the difference between Data Analytics, Data Analysis, Data Mining, Data Science, Machine Learning, and Big Data?</a></p>
+<p>For now, the best StackExchange site is  <a href="http://stats.stackexchange.com/questions/tagged/machine-learning?sort=frequent&amp;pageSize=15">stats.stackexchange.com – <em>machine-learning</em>.</a> (There's also <a href="http://datascience.stackexchange.com/">datascience.stackexchange.com</a>, but it's still in Beta.) And there's <a href="https://www.reddit.com/r/machinelearning">/r/machinelearning</a>. There are also many relevant discussions on Quora, for example: <a href="http://www.quora.com/What-is-the-difference-between-Data-Analytics-Data-Analysis-Data-Mining-Data-Science-Machine-Learning-and-Big-Data-1">What is the difference between Data Analytics, Data Analysis, Data Mining, Data Science, Machine Learning, and Big Data?</a></p>
 
 <p>You should also <a href="https://gitter.im/scikit-learn/scikit-learn">join the Gitter channel for scikit-learn!</a></p>
+
+<p>For help and community in meatspace, seek out meetups. Data Science Weekly's <a href="http://www.datascienceweekly.org/data-science-resources/the-big-list-of-data-science-resources">Big List of Data Science Resources</a> may help you.</p>
 
 <h1>
 <a id="assorted-opinions-and-other-resources" class="anchor" href="#assorted-opinions-and-other-resources" aria-hidden="true"><span class="octicon octicon-link"></span></a>Assorted Opinions and Other Resources</h1>
@@ -280,18 +320,31 @@ data." Pedro Domingos, in <em><a href="http://homes.cs.washington.edu/%7Epedrod/
 </ul>
 
 <h3>
-<a id="an-anecdote-from-a-popular-music-streaming-service" class="anchor" href="#an-anecdote-from-a-popular-music-streaming-service" aria-hidden="true"><span class="octicon octicon-link"></span></a>An anecdote from a Popular Music Streaming Service</h3>
+<a id="the-danger-zone" class="anchor" href="#the-danger-zone" aria-hidden="true"><span class="octicon octicon-link"></span></a>The "Danger Zone"</h3>
 
-<p>If you're using machine learning for unscientific reasons, like benefiting users ... as always you've got to keep your users in mind.</p>
+<p>So you are dabbling with Machine Learning. You've got Hacking Skills. Maybe you've got some "knowledge" in Domingos' sense (some "Substantive Expertise" or "Domain Knowledge"). This diagram isn't a perfect fit for us, but may get the point across:</p>
+
+<p><a href="http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram"><img src="http://i.imgur.com/cH5Rkko.png" alt="Drew Conway's Data Science Venn Diagram, modified slightly"></a></p>
+
+<p><strong>Please</strong> don't sell yourself as a Machine Learning expert while you're still in the Danger Zone. Don't build bad products or publish junk science. This guide can't tell you how you'll know you've "made it" into Machine Learning competence ... let alone  expertise. It's hard to evaluate proficiency without schools or other institutions. This is a common problem for self-taught people. Your best bet may be: expert peers.</p>
+
+<p>If you know a good way to evaluate Machine Learning proficiency, please submit a Pull Request to share it with us.</p>
+
+<h3>
+<a id="an-anecdote-about-user-experience" class="anchor" href="#an-anecdote-about-user-experience" aria-hidden="true"><span class="octicon octicon-link"></span></a>An Anecdote About User Experience</h3>
+
+<p>If you create software for users, and you want to use machine learning to benefit your users, <em>you must understand your users.</em> I won't get into a whole user experience lesson here, but in short, you must think about user experience.</p>
 
 <p>I have a friend who worked at <code>&lt;Redacted&gt;</code> Music Streaming Service. This company used machine learning in their recommendation and radio services. He complained about the way the company scored the radio feature's performance. There was disagreement about what should be scored. They used a metric, "no song skips." But why? Sure that indicates the recommendation wasn't <em>awful</em>, what if you want to measure engagement? Other metrics could measure positive engagement: "favorites," shares, listening time, or whether the listener returns to the radio station later. Measuring "no skips" might work for the passive listener, but the engaged listener is different. Perhaps the engaged listener will skip 5 songs, but find 20 songs they love and come back to the service later.</p>
 
-<p><strong>My takeaway:</strong> if you use machine learning to benefit your users, you must understand your users. You must understand <em>which kind</em> of user you're trying to benefit. Without the right measurement, you can't optimize your users' experiences.</p>
+<p><strong>My takeaway:</strong> user experience matters just as much as ever. You must understand <em>which kind</em> of user you're trying to benefit with your machine learning techniques. (Write user stories!) You must come up with measurements and ways to evaluate success for those users. You must be able to measure before you can optimize.</p>
+
+<p>This has to do with knowledge of the domain, but also may benefit from UX expertise. Work with UX experts if you can.</p>
 
 <h3>
-<a id="machine-learning-in-infosec-and-appsec" class="anchor" href="#machine-learning-in-infosec-and-appsec" aria-hidden="true"><span class="octicon octicon-link"></span></a>Machine Learning in InfoSec and AppSec</h3>
+<a id="machine-learning-in-internet-security" class="anchor" href="#machine-learning-in-internet-security" aria-hidden="true"><span class="octicon octicon-link"></span></a>Machine Learning in Internet Security</h3>
 
-<p>There was a great BlackHat webcast on this topic, <a href="https://www.blackhat.com/html/webcast/02192015-secure-because-math.html">Secure Because Math: Understanding Machine Learning-Based Security Products.</a> Slides are <a href="https://www.blackhat.com/html/webcast/02192015-secure-because-math.html">there</a>, <a href="https://attendee.gotowebinar.com/recording/80449431422110210">video recording is here.</a></p>
+<p>There was a great BlackHat webcast on this topic, <a href="https://www.blackhat.com/html/webcast/02192015-secure-because-math.html">Secure Because Math: Understanding Machine Learning-Based Security Products.</a> Slides are <a href="https://www.blackhat.com/html/webcast/02192015-secure-because-math.html">there</a>, <a href="https://attendee.gotowebinar.com/recording/80449431422110210">video recording is here.</a> Equally relevant to InfoSec and AppSec.</p>
 
 <h2>
 <a id="big-data" class="anchor" href="#big-data" aria-hidden="true"><span class="octicon octicon-link"></span></a>Big Data?</h2>
@@ -305,7 +358,7 @@ data." Pedro Domingos, in <em><a href="http://homes.cs.washington.edu/%7Epedrod/
 <strong><a href="https://spark.apache.org/">Apache Spark.</a></strong>
 
 <ul>
-<li>I mean, hell, <a href="http://databricks.com/blog/2015/02/17/introducingdataframes-in-spark-for-large-scale-data-science.html">Spark has DataFrames and easy co-operability with pandas!</a>
+<li>I mean, hell, <a href="https://databricks.com/blog/2015/02/17/introducing-dataframes-in-spark-for-large-scale-data-science.html">Spark has DataFrames and easy co-operability with pandas!</a>
 </li>
 <li>Berkeley has <a href="https://www.edx.org/course/scalable-machine-learning-uc-berkeleyx-cs190-1x#.VOC70VPF_lQ">a course on Scalable Machine Learning, focusing on Apache Spark.</a>
 </li>
@@ -324,11 +377,17 @@ data." Pedro Domingos, in <em><a href="http://homes.cs.washington.edu/%7Epedrod/
 <p>Also: <a href="http://simplystatistics.org/2014/05/22/10-things-statistics-taught-us-about-big-data-analysis/">10 things statistics taught us about big data analysis</a></p>
 
 <h2>
+<a id="finding-open-source-libraries" class="anchor" href="#finding-open-source-libraries" aria-hidden="true"><span class="octicon octicon-link"></span></a>Finding Open-Source Libraries</h2>
+
+<ul>
+<li>Bookmark <a href="https://github.com/josephmisiti/awesome-machine-learning">awesome-machine-learning</a>, a curated list of <a href="https://github.com/bayandin/awesome-awesomeness">awesome</a> Machine Learning frameworks, libraries and software</li>
+<li>For Machine-Learning libraries that might not be on PyPI, GitHub, etc., there's <a href="http://mloss.org/software/">MLOSS (Machine Learning Open Source Software)</a>. Seems to feature many academic libraries.</li>
+</ul>
+
+<h2>
 <a id="et-cetera" class="anchor" href="#et-cetera" aria-hidden="true"><span class="octicon octicon-link"></span></a>Et cetera</h2>
 
-<p>For Machine-Learning libraries that might not be on GitHub, there's <a href="http://mloss.org/software/">MLOSS (Machine Learning Open Source Software)</a>. Seems to feature many academic libraries.</p>
-
-<p><a href="http://www.kaggle.com/">Kaggle</a> has really exciting <a href="http://www.kaggle.com/competitions">competitions</a> and a <a href="http://www.kaggle.com/jobs">data science job board</a>.</p>
+<p><a href="https://www.kaggle.com/">Kaggle</a> has really exciting <a href="https://www.kaggle.com/competitions">competitions</a> and a <a href="https://www.kaggle.com/jobs">data science job board</a>.</p>
 
 <p>Lastly, here are other guides to Machine Learning:</p>
 
@@ -339,17 +398,14 @@ data." Pedro Domingos, in <em><a href="http://homes.cs.washington.edu/%7Epedrod/
 <a href="http://www.jacksimpson.co/2015/06/07/materials-for-learning-machine-learning/">Materials for Learning Machine Learning</a> by Jack Simpson</li>
 <li>
 <a href="https://docs.google.com/document/d/1YN6BVdReNAYc8B0fjQ84yzDflqmeEPj7S0Xc-9_26R0/edit">How to Machine Learn</a> by <a href="http://gwulfs.github.io/">Gideon Wulfsohn</a>
-
-<ul>
-<li>Features links to find meetups about ML</li>
-<li>Features links to "deeper dive" specialized topics</li>
-</ul>
 </li>
+<li>
+<a href="https://github.com/rhiever/Data-Analysis-and-Machine-Learning-Projects/blob/master/example-data-science-notebook/Example%20Machine%20Learning%20Notebook.ipynb">Example Machine Learning notebook/exercise/guide</a> by Randal Olson. Mentioned in Notebooks section as well, but it has a similar goal to this guide (introduce you, and show you where to go next). Rich "Further Reading" section.</li>
 <li>[Your guide here]</li>
 </ul>
 
       <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/hangtwenty/dive-into-machine-learning">Dive-into-machine-learning</a> is maintained by <a href="https://github.com/hangtwenty">hangtwenty</a>.</span>
+        <span class="site-footer-owner"><a href="https://github.com/hangtwenty/dive-into-machine-learning">Dive into Machine Learning</a> is maintained by <a href="https://github.com/hangtwenty">hangtwenty</a>.</span>
 
         <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
