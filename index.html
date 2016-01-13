@@ -276,12 +276,12 @@
 </ul>
 
 <h3>
-<a id="many-more-specialized-topics" class="anchor" href="#many-more-specialized-topics" aria-hidden="true"><span class="octicon octicon-link"></span></a>Many more specialized topics</h3>
-
-<p>Check out <a href="http://gwulfs.github.io/">Gideon Wulfsohn</a>'s <a href="https://docs.google.com/document/d/1YN6BVdReNAYc8B0fjQ84yzDflqmeEPj7S0Xc-9_26R0"><strong>excellent</strong> introduction to Machine Learning</a> for specialized knowledge on many topics... including <a href="http://www.quora.com/How-do-random-forests-work-in-laymans-terms">Ensemble Methods</a>, <a href="https://spark.apache.org/examples.html">Apache Spark</a>, <a href="https://www.coursera.org/course/neuralnets">Neural Networks</a>, <a href="http://pybrain.org/">Reinforcement Learning</a>, <a href="http://nltk.org">Natural Language Processing</a> (<a href="https://github.com/IndicoDataSolutions/Passage">RNN</a>, <a href="http://bugra.github.io/work/notes/2015-02-21/topic-modeling-for-the-uninitiated/">LDA</a>, <a href="http://rare-technologies.com/word2vec-tutorial/">Word2Vec</a>), <a href="https://pystruct.github.io/">Structured Prediction</a>, <a href="https://www.youtube.com/watch?v=S75EdAcXHKk">Deep Learning</a>, <a href="http://web.stanford.edu/class/cs246/">Distributed Systems (Hadoop Ecosystem)</a>, Graphical Models (<a href="http://www.autonlab.org/tutorials/hmm.html">Hidden Markov Models</a>), <a href="https://github.com/hyperopt/hyperopt">Hyper Parameter Optimization</a>, <a href="http://deeplearning.net/software/theano/tutorial/using_gpu.html">GPU Acceleration (Theano)</a>, <a href="http://deeplearning.net/tutorial/lenet.html">Computer Vision</a>, Internet of Things, and Visualization.</p>
+<a id="bayesian-methods" class="anchor" href="#bayesian-methods" aria-hidden="true"><span class="octicon octicon-link"></span></a>Bayesian Methods</h3>
 
 <p>Here's an IPython Notebook book about <a href="http://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/">Probabilistic Programming
 and Bayesian Methods for Hackers</a>: "An intro to Bayesian methods and probabilistic programming from a computation/understanding-first, mathematics-second point of view."</p>
+
+<p>See also <a href="https://github.com/hangtwenty/dive-into-machine-learning/issues/26">Issue #26</a>; there are other good resources on this, and this section needs revision.</p>
 
 <h2>
 <a id="questions-answers-chats" class="anchor" href="#questions-answers-chats" aria-hidden="true"><span class="octicon octicon-link"></span></a>Questions, answers, chats</h2>
@@ -327,18 +327,18 @@ data." Pedro Domingos, in <a href="http://homes.cs.washington.edu/%7Epedrod/pape
 <h3>
 <a id="welcome-to-the-danger-zone" class="anchor" href="#welcome-to-the-danger-zone" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to the Danger Zone</h3>
 
-<p>So you are dabbling with Machine Learning. You've got Hacking Skills. Maybe you've got some "knowledge" in Domingos' sense (some "Substantive Expertise" or "Domain Knowledge"). This diagram isn't a perfect fit for us, but may get the point across:</p>
+<p>So you are dabbling with Machine Learning. You've got Hacking Skills. Maybe you've got some "knowledge" in Domingos' sense (some "Substantive Expertise" or "Domain Knowledge"). This diagram is modified slightly from Drew Conway's "Data Science Venn Diagram." It isn't a <em>perfect</em> fit for us, but it may get the point across:</p>
 
 <p><a href="http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram"><img src="http://i.imgur.com/cH5Rkko.png" alt="Drew Conway's Data Science Venn Diagram, modified slightly"></a></p>
 
-<p><strong>Please</strong> don't sell yourself as a Machine Learning expert while you're still in the Danger Zone. Don't build bad products or publish junk science. This guide can't tell you how you'll know you've "made it" into Machine Learning competence ... let alone  expertise. It's hard to evaluate proficiency without schools or other institutions. This is a common problem for self-taught people.</p>
+<p><strong>Please</strong> don't sell yourself as a Machine Learning expert while you're still in the Danger Zone. Don't build bad products or publish junk science. This guide can't tell you how you'll know you've "made it" into Machine Learning competence ... let alone expertise. It's hard to evaluate proficiency without schools or other institutions. This is a common problem for self-taught people.</p>
 
 <h4>
 <a id="towards-expertise" class="anchor" href="#towards-expertise" aria-hidden="true"><span class="octicon octicon-link"></span></a>Towards Expertise</h4>
 
 <p>You need practice. <a href="https://news.ycombinator.com/item?id=10508565">On Hacker News, user olympus commented to say you could use competitions to practice and evaluate yourself</a>. <a href="http://www.kaggle.com/competitions">Kaggle</a> and <a href="http://www.chalearn.org/">ChaLearn</a> are hubs for Machine Learning competitions. You can find some <a href="https://github.com/apeeyush/machine-learning">examples of code for popular Kaggle competitions here</a>. For smaller exercises, <a href="https://www.hackerrank.com/domains/ai/machine-learning/page/1">try HackerRank</a>.</p>
 
-<p>You also need understanding. You should review what Kaggle competition winners had to say about their solutions, <a href="http://blog.kaggle.com/">for example, the "No Free Hunch" blog</a>. These might be over your head at first but once you're starting to understand and appreciate these, you know you're getting somewhere.</p>
+<p>You also need understanding. You should review what Kaggle competition winners say about their solutions, <a href="http://blog.kaggle.com/">for example, the "No Free Hunch" blog</a>. These might be over your head at first but once you're starting to understand and appreciate these, you know you're getting somewhere.</p>
 
 <p>Competitions and challenges are one way to practice. You shouldn't limit yourself, though.</p>
 
@@ -348,14 +348,14 @@ data." Pedro Domingos, in <a href="http://homes.cs.washington.edu/%7Epedrod/pape
 <li>
 <strong>Ask a question. Start your own study.</strong> The <a href="https://github.com/DataScienceSpecialization/courses/blob/master/01_DataScientistToolbox/03_02_whatIsData/index.Rmd#the-data-is-the-second-most-important-thing">"most important thing in data science is the question"</a> (<a href="https://github.com/jtleek">Dr. Jeff T. Leek</a>). So start with a question. Then, find <a href="https://github.com/caesar0301/awesome-public-datasets">real data</a>. Analyze it. Then ...</li>
 <li>
-<strong>Communicate results.</strong> When you have a novel finding, reach out for peer review (see below).</li>
+<strong>Communicate results.</strong> When you have a novel finding, reach out for peer review.</li>
 <li>
 <strong>Fix issues.</strong> Learn. Share what you learn.</li>
 </ol>
 
 <p>And repeat. Re-phrasing this, it fits with the <a href="https://en.wikipedia.org/wiki/Scientific_method">scientific method</a>: formulate a question (or problem statement), create a hypothesis, gather data, analyze the data, and communicate results. (You should <a href="http://101.datascience.community/2012/06/27/the-data-scientific-method/">watch this video about the scientific method in data science</a>, and/or <a href="http://customerthink.com/getting-insights-using-data-science-skills-and-the-scientific-method/">read this article</a>.)</p>
 
-<p>How can you come up with interesting questions? Once a week, <a href="https://github.com/caesar0301/awesome-public-datasets">browse datasets</a> and write down some questions. Also, you should sign up for <a href="https://tinyletter.com/data-is-plural">Data is Plural</a>, a newsletter of interesting data sets. Stay curious. When a question inspires you, start a study.</p>
+<p>How can you come up with interesting questions? Here's one way. Every Sunday, <a href="https://github.com/caesar0301/awesome-public-datasets">browse datasets</a> and write down some questions. Also, sign up for <a href="https://tinyletter.com/data-is-plural">Data is Plural</a>, a newsletter of interesting datasets; look at these, datasets, and write down questions. Stay curious. When a question inspires you, start a study.</p>
 
 <p>This advice, to do practice studies and learn from peer review, is based on <a href="https://github.com/hangtwenty/dive-into-machine-learning/issues/11#issuecomment-153934120">a conversation</a> with <a href="http://www.randalolson.com/">Dr. Randal S. Olson</a>. Here's more advice from Olson, <a href="https://github.com/hangtwenty/dive-into-machine-learning/issues/11#issuecomment-154135498">quoted with permission:</a></p>
 
@@ -379,32 +379,34 @@ data." Pedro Domingos, in <a href="http://homes.cs.washington.edu/%7Epedrod/pape
 <a href="https://news.ycombinator.com">Hacker News: news.ycombinator.com</a>. You'll probably want to submit as "Show HN"</li>
 </ul>
 
-<p>Post to any of those, and ask for feedback. You'll get feedback. You'll learn a ton. As experts review your work you will learn a lot about the field. You'll also be practicing the skill of accepting critical feedback.</p>
+<p>Post to any of those, and ask for feedback. You'll get feedback. You'll learn a ton. As experts review your work you will learn a lot about the field. You'll also be practicing a crucial skill: accepting critical feedback.</p>
 
 <p>When I read the feedback on my Pull Requests, first I repeat to myself, "I will not get defensive, I will not get defensive, I will not get defensive." You may want to do that before you read reviews of your Machine Learning work too.</p>
 
 <h3>
 <a id="an-anecdote-about-user-experience" class="anchor" href="#an-anecdote-about-user-experience" aria-hidden="true"><span class="octicon octicon-link"></span></a>An Anecdote About User Experience</h3>
 
-<p>If you create software for users, and you want to use machine learning to benefit your users, <em>you must understand your users.</em> I won't get into a whole user experience lesson here, but in short, you must think about user experience.</p>
+<p>If you create software for users, and you want to use machine learning to benefit your users, <em>you must understand your users.</em> I won't get into a whole user experience rant here, but in short, you must think about user experience.</p>
 
 <p>I have a friend who worked at <code>&lt;Redacted&gt;</code> Music Streaming Service. This company used machine learning in their recommendation and radio services. He complained about the way the company scored the radio feature's performance. There was disagreement about what should be scored. They used a metric, "no song skips." But why? Sure that indicates the recommendation wasn't <em>awful</em>, what if you want to measure engagement? Other metrics could measure positive engagement: "favorites," shares, listening time, or whether the listener returns to the radio station later. Measuring "no skips" might work for the passive listener, but the engaged listener is different. Perhaps the engaged listener will skip 5 songs, but find 20 songs they love and come back to the service later.</p>
 
-<p><strong>My takeaway:</strong> user experience matters just as much as ever. You must understand <em>which kind</em> of user you're trying to benefit with your machine learning techniques. (Write user stories!) You must come up with measurements and ways to evaluate success for those users. You must be able to measure before you can optimize.</p>
+<p><strong>My takeaway:</strong> user experience matters just as much as ever. You must understand <em>which kind</em> of user you're trying to benefit with your machine learning techniques. Write user stories. (Some readers may notice this anecdote is very unscientific. Well, user stories are sometimes unscientific. Yet still so important.)</p>
 
-<p>This has to do with knowledge of the domain (substantive expertise), but you may also benefit from UX expertise. Work with UX experts if you can.</p>
+<p>Try to measure success <em>for your users.</em> You must be able to measure before you can optimize.</p>
+
+<p>It helps to have knowledge of the domain (substantive expertise). You may also benefit from UX expertise. Work with UX experts if you can.</p>
 
 <h3>
 <a id="machine-learning-in-internet-security" class="anchor" href="#machine-learning-in-internet-security" aria-hidden="true"><span class="octicon octicon-link"></span></a>Machine Learning in Internet Security</h3>
 
-<p>There was a great BlackHat webcast on this topic, <a href="https://www.blackhat.com/html/webcast/02192015-secure-because-math.html">Secure Because Math: Understanding Machine Learning-Based Security Products.</a> Slides are <a href="https://www.blackhat.com/html/webcast/02192015-secure-because-math.html">there</a>, <a href="https://attendee.gotowebinar.com/recording/80449431422110210">video recording is here.</a> Equally relevant to InfoSec and AppSec.</p>
+<p>There was a great BlackHat webcast on this topic, <a href="https://www.blackhat.com/html/webcast/02192015-secure-because-math.html">Secure Because Math: Understanding Machine Learning-Based Security Products.</a> Slides are <a href="https://www.blackhat.com/html/webcast/02192015-secure-because-math.html">here</a>, <a href="https://attendee.gotowebinar.com/recording/80449431422110210">video recording is here.</a> Equally relevant to InfoSec and AppSec.</p>
 
 <h2>
 <a id="big-data" class="anchor" href="#big-data" aria-hidden="true"><span class="octicon octicon-link"></span></a>Big Data?</h2>
 
-<p>Scaling data analysis is a familiar problem now, and there's no shortage of ways to address it. <a href="http://www.john-foreman.com/blog/surviving-data-science-at-the-speed-of-hype">Beware needless hype and companies that want to sell you flashy, proprietary solutions.</a> You can do it all with open-source tools. Even if you contract it, you consider looking for contractors who use known good stacks. No news here.</p>
+<p>Scaling data analysis is a familiar problem now, and there's no shortage of ways to address it. <a href="http://www.john-foreman.com/blog/surviving-data-science-at-the-speed-of-hype">Beware needless hype and companies selling you flashy, proprietary solutions.</a> You can do it all with open-source tools. Even if "buy" instead of "build," you may want to buy from vendors who use known good stacks. No news here.</p>
 
-<p>Here are some tools to reach for:</p>
+<p>Here are some open-source tools to reach for:</p>
 
 <ul>
 <li>
